@@ -56,55 +56,55 @@ public class ProductRepository {
         return found;
     }
 
-//
-//
-//    public Product removeByKey(int key) {
-//
-//        Product found = findById(key);
-//
-//        if (found == null) {
-//            return null;
-//        }
-//
-//        products.remove(found);
-//
-//        return found;
-//
-//    }
 
 
-//        public Product removeByOpt(int opt) {
-//
-//        Product found = findById(opt);
-//
-//        if (found == null) {
-//            return null;
-//        }
-//
-//        products.remove(found);
-//
-//        return found;
-//
-//    }
-//    public boolean max(int a, int b) {
-//        if(a > b) {
-//            return true;
-//        } else if (a == b) {
-//            return false;
-//        } else {
-//            return false;
-//        }
-//    }
-//
-//
-//  public boolean min(int a, int b) {
-//        if(a < b) {
-//            return true;
-//        } else if (a == b) {
-//            return false;
-//        } else {
-//            return false;
-//        }
-//    }
+    public Product removeByKey(int key) {
+
+        Product found = findById(key);
+
+        if (found == null) {
+            return null;
+        }
+
+        products.remove(found);
+
+        return found;
+
+    }
+
+
+        public Product removeByOpt(int opt) {
+
+        Product found = findById(opt);
+
+        if (found == null) {
+            return null;
+        }
+
+        products.remove(found);
+
+        return found;
+
+    }
+    public boolean max(int a, int b) {
+        if(a > b) {
+            return true;
+        } else if (a == b) {
+            return false;
+        } else {
+            return false;
+        }
+    }
+
+
+  public boolean min(int a, int b) {
+        if(a < b) {
+            return true;
+        } else if (a == b) {
+            return false;
+        } else {
+            return false;
+        }
+    }
 
 }
