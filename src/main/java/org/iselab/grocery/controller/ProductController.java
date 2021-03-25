@@ -83,41 +83,41 @@ public class ProductController {
 //        SystemUtils.pressEnterKeyToContinue();
 //    }
 //
-//    public void searchByName() {
-//
-//        SystemUtils.clearScreen();
-//
-//        SystemUtils.printHeader("Products", "Search by Name");
-//
-//        System.out.print("Name: ");
-//
-//        String name = SystemUtils.getStringFromKeyboard();
-//
-//        print(productRepository.findByName(name));
-//
-//        SystemUtils.pressEnterKeyToContinue();
-//    }
-//
-//    public void searchById() {
-//
-//        SystemUtils.clearScreen();
-//
-//        SystemUtils.printHeader("Products", "Search by Id");
-//
-//        System.out.print("Id: ");
-//
-//        int id = SystemUtils.getIntFromKeyboard();
-//
-//        Product p = productRepository.findById(id);
-//
-//        if (p == null) {
-//            System.out.println("Product not found");
-//        } else {
-//            print(Arrays.asList(p));
-//        }
-//
-//        SystemUtils.pressEnterKeyToContinue();
-//    }
+    public void searchByName() {
+
+        SystemUtils.clearScreen();
+
+        SystemUtils.printHeader("Products", "Search by Name");
+
+        System.out.print("Name: ");
+
+        String name = SystemUtils.getStringFromKeyboard();
+
+        print(productRepository.findByName(name));
+
+        SystemUtils.pressEnterKeyToContinue();
+    }
+
+    public void searchById() {
+
+        SystemUtils.clearScreen();
+
+        SystemUtils.printHeader("Products", "Search by Id");
+
+        System.out.print("Id: ");
+
+        int id = SystemUtils.getIntFromKeyboard();
+
+        Product p = productRepository.findById(id);
+
+        if (p == null) {
+            System.out.println("Product not found");
+        } else {
+            print(Arrays.asList(p));
+        }
+
+        SystemUtils.pressEnterKeyToContinue();
+    }
 
     public void addProduct() {
 
@@ -146,11 +146,11 @@ public class ProductController {
                 case 1:
                     addProduct();
                     break;
-//                case 2:
-//                    searchByName();
-//                    break;
-//                case 3:
-//                    searchById();
+                case 2:
+                    searchByName();
+                    break;
+                case 3:
+                    searchById();
 //                    break;
 //                case 4:
 //                    remove();
