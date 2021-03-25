@@ -81,6 +81,14 @@ public class ProductController {
         int sr = shapes.calculateShape("circle");
         System.out.println("this is a useless thing for test: "+ sr);
         SystemUtils.pressEnterKeyToContinue();
+
+        Shapes rectangle = new Rectangle("Rectangle",6,7);
+        rectangle.getShape();
+        double areaRec = rectangle.calculateArea(4,6);
+        System.out.println("this is a useless thing for test: "+ areaRec);
+        SystemUtils.pressEnterKeyToContinue();
+
+
     }
 
     public void searchByName() {
