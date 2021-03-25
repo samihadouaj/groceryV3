@@ -1,6 +1,24 @@
 package org.iselab.grocery.controller;
 
-public class Shapes {
+public abstract class Shapes {
+
+
+	String shape;
+
+	public Shapes(String shape) {
+		this.shape = shape;
+	}
+
+
+
+	public void  getShape() {
+		System.out.println("this is a "+ this.shape);
+	}
+	public abstract double calculateArea(double d);
+	public abstract double calculateArea(double a,double b);
+
+
+
 	public int calculateShape(String shape) {
 		if(shape =="cercle") {
 			System.out.println("area is blab;la");
@@ -22,6 +40,9 @@ public class Shapes {
 		return 0;
 		
 	}
-	
+
+
+
+
 
 }
