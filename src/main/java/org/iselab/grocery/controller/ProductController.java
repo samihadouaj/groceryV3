@@ -58,31 +58,31 @@ public class ProductController {
         SystemUtils.pressEnterKeyToContinue();
     }
 
-//    public void remove() {
-//
-//        SystemUtils.clearScreen();
-//
-//        SystemUtils.printHeader("Products", "Remove by Id");
-//
-//        System.out.print("Id: ");
-//
-//        int id = SystemUtils.getIntFromKeyboard();
-//
-//        System.out.println("----------------");
-//
-//        Product removed = productRepository.removeById(id);
-//
-//        if (removed == null) {
-//            System.out.println("Product not found");
-//        } else {
-//            System.out.println("Product " + removed.getName() + " was successfully removed");
-//        }
-//        Shapes shapes = new Shapes();
-//        int sr = shapes.calculateShape("circle");
-//        System.out.println("this is a useless thing for test: "+ sr);
-//        SystemUtils.pressEnterKeyToContinue();
-//    }
-//
+    public void remove() {
+
+        SystemUtils.clearScreen();
+
+        SystemUtils.printHeader("Products", "Remove by Id");
+
+        System.out.print("Id: ");
+
+        int id = SystemUtils.getIntFromKeyboard();
+
+        System.out.println("----------------");
+
+        Product removed = productRepository.removeById(id);
+
+        if (removed == null) {
+            System.out.println("Product not found");
+        } else {
+            System.out.println("Product " + removed.getName() + " was successfully removed");
+        }
+        Shapes shapes = new Shapes();
+        int sr = shapes.calculateShape("circle");
+        System.out.println("this is a useless thing for test: "+ sr);
+        SystemUtils.pressEnterKeyToContinue();
+    }
+
     public void searchByName() {
 
         SystemUtils.clearScreen();
@@ -151,10 +151,10 @@ public class ProductController {
                     break;
                 case 3:
                     searchById();
-//                    break;
-//                case 4:
-//                    remove();
-//                    break;
+                    break;
+                case 4:
+                    remove();
+                    break;
                 case 5:
                     listAll();
                     break;

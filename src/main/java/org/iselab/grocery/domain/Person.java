@@ -10,5 +10,8 @@ public abstract class Person {
     public String sayNyName(){
         return this.name;
     }
-
+    public String dubplicate(String string){
+        System.out.println(string);
+        return  string;
+    }
 }

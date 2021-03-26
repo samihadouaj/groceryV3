@@ -10,7 +10,8 @@ public class MainClass {
     public static void main(String[] args) {
 
         Person person = new Employee("3mor");
-        
+        person.dubplicate("HAHAH");
+
         MainClass mainClass = new MainClass();
 
         mainClass.run();
