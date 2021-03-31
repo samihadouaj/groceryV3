@@ -49,6 +49,7 @@ public class MainClass {
 
             option = showMenu();
         }
+        System.out.println("Good!");
 
         System.out.println("Good bye!");
     }
